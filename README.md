@@ -10,7 +10,7 @@
 
 2. You can also create a sample Application via AWS and push to your repository:
 
-# In this example I'm using ```US-EAST-1``` as default region. If you want to use different region, just update the section ```//aws-codedeploy-``````region```/ as you desired.
+# In this example I'm using ```US-EAST-1``` as default region. If you want to use different region, just update the section ```//aws-codedeploy-region/``` as you desired.
 
 ```- aws s3 cp s3://aws-codedeploy-us-east-1/samples/latest/SampleApp_Linux.zip . 
 - unzip SampleApp_Linux.zip
