@@ -25,8 +25,6 @@
 
 - In your local machine, go to the folder where the repository was cloned. To deploy via Terraform, open the folder ```terraform-website``` and execute those commands:
 
-### Markdown
-
 ```markdown
 # To initialize a Terraform working directory
 terraform init 
