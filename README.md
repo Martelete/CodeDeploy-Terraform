@@ -18,7 +18,8 @@
 - rm SampleApp_Linux.zip
 - git add .
 - git commit -m "Added sample app"
-- git push -u origin master```
+- git push -u origin master
+```
 
 3. By using CodeDeploy, you can now provision an instance/create application and deployment group and deploy the application to the instance using Terraform scripts.
 
