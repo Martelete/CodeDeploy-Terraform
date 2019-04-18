@@ -20,7 +20,7 @@
 
 3. By using CodeDeploy, you can now provision an instance/create application and deployment group and deploy the application to the instance using Terraform scripts.
 
-- In your local machine, go to the folder where the repository was cloned. To deploy via Terraform run the current commands: 
+- In your local machine, go to the folder where the repository was cloned. To deploy via Terraform, open the folder ```terraform-website``` and execute those commands:
 
 ### Markdown
 
