@@ -6,7 +6,6 @@
 - New
 - GitHub Pages - set to Master Branch
 - Select Themes at your choice (once you back to main page, make sure you have deleted index.html to reproduce the new theme)
-- Clone your repository 
 
 2. You can also create a sample Application via AWS and push to your repository:
 
@@ -19,6 +18,8 @@
 - git add .
 - git commit -m "Added sample app"
 - git push -u origin master
+
+- clone your repository
 ```
 
 3. By using CodeDeploy, you can now provision an instance/create application and deployment group and deploy the application to the instance using Terraform scripts.
