@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+## How to create a Website in GitHub and deploy via CodeDeploy AWS and Terraform
 
-You can use the [editor on GitHub](https://github.com/henrique1986/CodeDeployGitHubDemo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+1. Create a Sample Website on Github:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Your repository
+- New
+- GitHub Pages - set to Master Branch
+- Select Themes at your choice (once you back to main page, make sure you have deleted index.html to reproduce the new theme)
+- Clone your repository 
+
+2. You can also create a sample Application via AWS and push to your repository:
+
+# In this example I'm using US-EAST-1 as default region
+- aws s3 cp s3://aws-codedeploy-us-east-1/samples/latest/SampleApp_Linux.zip . 
+- unzip SampleApp_Linux.zip
+- rm SampleApp_Linux.zip
+- git add .
+- git commit -m "Added sample app"
+- git push -u origin master
+
+3. By using CodeDeploy, you can now provision an instance/create application and deployment group and deploy the application to the instance using Terraform scripts.
+
+- In your local machine, go to the folder where the repository was cloned. To deploy via Terraform run the current commands: 
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
-Syntax highlighted code block
+# To initialize a Terraform working directory
+terraform init 
 
-# Header 1
-## Header 2
-### Header 3
+# Generate and show execution plan
+terraform plan 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Builds or changes the infrastructure
+terraform apply 
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/henrique1986/CodeDeployGitHubDemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
